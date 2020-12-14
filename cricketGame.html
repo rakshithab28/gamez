@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+</head>
+<style>
+    #head {
+        font-size: 20px;
+        color: blue;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="head">Cricket 10</div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="#team1">Team1</div>
+                <input id="btn" type="button" value="Hit1" /><br>
+                <table border="1" id="lotto">
+                    <tbody>
+                        <tr>
+                            <th>Player 1</th>
+                            <td class="normal" id="cell00">&nbsp;</td>
+                            <td class="normal" id="cell01">&nbsp;</td>
+                            <td class="normal" id="cell02">&nbsp;</td>
+                            <td class="normal" id="cell03">&nbsp;</td>
+                            <td class="normal" id="cell04">&nbsp;</td>
+                            <td class="red" id="cell05">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 2</th>
+                            <td class="normal" id="cell10">&nbsp;</td>
+                            <td class="normal" id="cell11">&nbsp;</td>
+                            <td class="normal" id="cell12">&nbsp;</td>
+                            <td class="normal" id="cell13">&nbsp;</td>
+                            <td class="normal" id="cell14">&nbsp;</td>
+                            <td class="red" id="cell15">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 3</th>
+                            <td class="normal" id="cell20">&nbsp;</td>
+                            <td class="normal" id="cell21">&nbsp;</td>
+                            <td class="normal" id="cell22">&nbsp;</td>
+                            <td class="normal" id="cell23">&nbsp;</td>
+                            <td class="normal" id="cell24">&nbsp;</td>
+                            <td class="red" id="cell25">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 4</th>
+                            <td class="normal" id="cell30">&nbsp;</td>
+                            <td class="normal" id="cell31">&nbsp;</td>
+                            <td class="normal" id="cell32">&nbsp;</td>
+                            <td class="red" id="cell33">&nbsp;</td>
+                            <td class="normal" id="cell34">&nbsp;</td>
+                            <td class="red" id="cell35">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 5</th>
+                            <td class="normal" id="cell40">&nbsp;</td>
+                            <td class="normal" id="cell41">&nbsp;</td>
+                            <td class="normal" id="cell42">&nbsp;</td>
+                            <td class="red" id="cell43">&nbsp;</td>
+                            <td class="normal" id="cell44">&nbsp;</td>
+                            <td class="red" id="cell45">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 6</th>
+                            <td class="normal" id="cell50">&nbsp;</td>
+                            <td class="normal" id="cell51">&nbsp;</td>
+                            <td class="normal" id="cell52">&nbsp;</td>
+                            <td class="red" id="cell53">&nbsp;</td>
+                            <td class="normal" id="cell54">&nbsp;</td>
+                            <td class="red" id="cell55">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <th>Player 7</th>
+                            <td class="normal" id="cell60">&nbsp;</td>
+                            <td class="normal" id="cell61">&nbsp;</td>
+                            <td class="normal" id="cell62">&nbsp;</td>
+                            <td class="red" id="cell63">&nbsp;</td>
+                            <td class="normal" id="cell64">&nbsp;</td>
+                            <td class="red" id="cell65">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 8</th>
+                            <td class="normal" id="cell70">&nbsp;</td>
+                            <td class="normal" id="cell71">&nbsp;</td>
+                            <td class="normal" id="cell72">&nbsp;</td>
+                            <td class="normal" id="cell73">&nbsp;</td>
+                            <td class="normal" id="cell74">&nbsp;</td>
+                            <td class="red" id="cell75">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 9</th>
+                            <td class="normal" id="cell80">&nbsp;</td>
+                            <td class="normal" id="cell81">&nbsp;</td>
+                            <td class="normal" id="cell82">&nbsp;</td>
+                            <td class="normal" id="cell83">&nbsp;</td>
+                            <td class="normal" id="cell84">&nbsp;</td>
+                            <td class="red" id="cell85">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 10</th>
+                            <td class="normal" id="cell90">&nbsp;</td>
+                            <td class="normal" id="cell91">&nbsp;</td>
+                            <td class="normal" id="cell92">&nbsp;</td>
+                            <td class="normal" id="cell93">&nbsp;</td>
+                            <td class="normal" id="cell94">&nbsp;</td>
+                            <td class="red" id="cell95">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <input id="sum" type="button" value="Get Sum" /><br>
+                <span id="display"></span>
+            </div>
+
+            <div class="col-sm-4">
+                <input id="winner" type="button" value="Winner" /><br>
+                <div id="winner1"></div>
+
+            </div>
+            <div class="col-sm-4">
+                <div id="#team2">Team2</div>
+                <input id="btn1" type="button" value="Hit2" /><br>
+                <table border="1" id="lotto1">
+                    <tbody>
+                        <tr>
+                            <th>Player 1</th>
+                            <td class="normal" id="cell100">&nbsp;</td>
+                            <td class="normal" id="cell101">&nbsp;</td>
+                            <td class="normal" id="cell102">&nbsp;</td>
+                            <td class="normal" id="cell103">&nbsp;</td>
+                            <td class="normal" id="cell104">&nbsp;</td>
+                            <td class="red" id="cell105">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 2</th>
+                            <td class="normal" id="cell110">&nbsp;</td>
+                            <td class="normal" id="cell111">&nbsp;</td>
+                            <td class="normal" id="cell112">&nbsp;</td>
+                            <td class="normal" id="cell113">&nbsp;</td>
+                            <td class="normal" id="cell114">&nbsp;</td>
+                            <td class="red" id="cell115">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 3</th>
+                            <td class="normal" id="cell120">&nbsp;</td>
+                            <td class="normal" id="cell121">&nbsp;</td>
+                            <td class="normal" id="cell122">&nbsp;</td>
+                            <td class="normal" id="cell123">&nbsp;</td>
+                            <td class="normal" id="cell124">&nbsp;</td>
+                            <td class="red" id="cell125">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 4</th>
+                            <td class="normal" id="cell130">&nbsp;</td>
+                            <td class="normal" id="cell131">&nbsp;</td>
+                            <td class="normal" id="cell132">&nbsp;</td>
+                            <td class="red" id="cell133">&nbsp;</td>
+                            <td class="normal" id="cell134">&nbsp;</td>
+                            <td class="red" id="cell135">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 5</th>
+                            <td class="normal" id="cell140">&nbsp;</td>
+                            <td class="normal" id="cell141">&nbsp;</td>
+                            <td class="normal" id="cell142">&nbsp;</td>
+                            <td class="red" id="cell143">&nbsp;</td>
+                            <td class="normal" id="cell144">&nbsp;</td>
+                            <td class="red" id="cell145">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 6</th>
+                            <td class="normal" id="cell150">&nbsp;</td>
+                            <td class="normal" id="cell151">&nbsp;</td>
+                            <td class="normal" id="cell152">&nbsp;</td>
+                            <td class="red" id="cell153">&nbsp;</td>
+                            <td class="normal" id="cell154">&nbsp;</td>
+                            <td class="red" id="cell155">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <th>Player 7</th>
+                            <td class="normal" id="cell160">&nbsp;</td>
+                            <td class="normal" id="cell161">&nbsp;</td>
+                            <td class="normal" id="cell162">&nbsp;</td>
+                            <td class="red" id="cell163">&nbsp;</td>
+                            <td class="normal" id="cell164">&nbsp;</td>
+                            <td class="red" id="cell165">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 8</th>
+                            <td class="normal" id="cell170">&nbsp;</td>
+                            <td class="normal" id="cell171">&nbsp;</td>
+                            <td class="normal" id="cell172">&nbsp;</td>
+                            <td class="normal" id="cell173">&nbsp;</td>
+                            <td class="normal" id="cell174">&nbsp;</td>
+                            <td class="red" id="cell175">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 9</th>
+                            <td class="normal" id="cell180">&nbsp;</td>
+                            <td class="normal" id="cell181">&nbsp;</td>
+                            <td class="normal" id="cell182">&nbsp;</td>
+                            <td class="normal" id="cell183">&nbsp;</td>
+                            <td class="normal" id="cell184">&nbsp;</td>
+                            <td class="red" id="cell185">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Player 10</th>
+                            <td class="normal" id="cell190">&nbsp;</td>
+                            <td class="normal" id="cell191">&nbsp;</td>
+                            <td class="normal" id="cell192">&nbsp;</td>
+                            <td class="normal" id="cell193">&nbsp;</td>
+                            <td class="normal" id="cell194">&nbsp;</td>
+                            <td class="red" id="cell195">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <input id="sum1" type="button" value="Get Sum" /><br>
+                <span id="display1"></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById('btn');
+        let x;
+        btn.addEventListener('click', UpdateTable);
+        function CreateLottoValues() {
+            return Math.floor(Math.random() * 4 + 1);
+        }
+        function UpdateTable() {
+
+            for (var i = 0; i < 10; i++) {
+                for (var j = 0; j < 6; j++) {
+                    tmp = 'cell' + i + j;
+                    document.getElementById(tmp).innerHTML = CreateLottoValues();
+                }
+            }
+        }
+        var sum = document.getElementById('sum');
+        sum.addEventListener('click', GetSum);
+        sumVal = 0;
+        function GetSum() {
+            for (var i = 0; i < 10; i++) {
+                for (var j = 0; j < 6; j++) {
+                    tmp = 'cell' + i + j;
+                    sumVal += parseInt(document.getElementById(tmp).innerHTML);
+
+                }
+            }
+            document.getElementById("display").innerHTML = "SumVal:" + sumVal;
+            console.log(sumVal);
+        }
+
+        var btn1 = document.getElementById('btn1');
+        btn1.addEventListener('click', UpdateTable1);
+        function CreateLottoValues1() {
+            return Math.floor(Math.random() * 6 + 1);
+        }
+        function UpdateTable1() {
+
+            for (var i = 10; i < 20; i++) {
+                for (var j = 0; j < 6; j++) {
+                    tmp = 'cell' + i + j;
+                    document.getElementById(tmp).innerHTML = CreateLottoValues1();
+                }
+            }
+        }
+        var sum1 = document.getElementById('sum1');
+        sum1.addEventListener('click', GetSum1);
+        sumVal1 = 0;
+        function GetSum1() {
+            for (var i = 10; i < 20; i++) {
+                for (var j = 0; j < 6; j++) {
+                    tmp = 'cell' + i + j;
+                    sumVal1 += parseInt(document.getElementById(tmp).innerHTML);
+
+                }
+            }
+            document.getElementById("display1").innerHTML = "SumVal:" + sumVal1;
+            console.log(sumVal1);
+        }
+
+        var winner = document.getElementById('winner');
+        winner.addEventListener('click', GetWinner);
+        function GetWinner() {
+            if (sumVal > sumVal1) {
+                document.getElementById("winner1").innerHTML = "TEAM1 WON THE MATCH"
+                console.log("Team1 Winner");
+            } else {
+                document.getElementById("winner1").innerHTML = "TEAM2 WON THE MATCH"
+                console.log("Team2 Winner");
+            }
+        }
+    </script>
+</body>
+
+</html>
